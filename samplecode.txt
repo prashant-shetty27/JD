@@ -1,0 +1,19 @@
+package com.B2B.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class B2BHome {
+	
+	public static void main(String[] args) {
+
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.justdial.com/");
+		System.out.println("Execution completed");
+		
+	}
+
+}
