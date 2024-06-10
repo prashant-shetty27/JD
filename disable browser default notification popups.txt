@@ -1,0 +1,5 @@
+WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.addArguments("--disable-notifications");
