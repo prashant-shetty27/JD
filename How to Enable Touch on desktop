@@ -1,0 +1,10 @@
+WebDriverManager.chromedriver().setup();
+		Map<String, String> mobileEmulation = new HashMap<>();
+		mobileEmulation.put("deviceName", "iPhone SE");
+
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.addArguments("--disable-notifications");
+		chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+
+		driver = new ChromeDriver(chromeOptions);
+		driver.manage().window().maximize();
